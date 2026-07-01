@@ -1,0 +1,12 @@
+{
+  "model_type": "keras",
+  "model_path": "artifacts/oa_deepfplearn.keras",
+  "data_path": "data/toxicity_data.csv",
+  "outputs": {
+    "prediction_explanations": "artifacts/explainability_full\\prediction_explanations.csv",
+    "fusion_attention_weights": "artifacts/explainability_full\\fusion_attention_weights.csv",
+    "ontology_reasoning_paths": "artifacts/explainability_full\\ontology_reasoning_paths.csv",
+    "probability_distribution": "artifacts/explainability_full\\predicted_probability_distribution.png",
+    "shap_feature_importance": "artifacts/explainability_full\\shap_feature_importance.csv"
+  }
+}

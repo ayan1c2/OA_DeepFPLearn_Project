@@ -1,0 +1,9 @@
+PREFIX pfas: <http://example.org/pfas#>
+
+SELECT ?compound ?class ?endpoint ?risk
+WHERE {
+  ?compound pfas:belongsToClass ?class ;
+            pfas:hasToxicityEndpoint ?endpoint ;
+            pfas:hasRiskCategory ?risk .
+}
+ORDER BY ?compound ?endpoint

@@ -1,0 +1,10 @@
+PREFIX chem: <http://example.org/chemical#>
+PREFIX pfas: <http://example.org/pfas#>
+
+SELECT ?compound ?class ?smiles
+WHERE {
+  ?compound pfas:belongsToClass ?class ;
+            pfas:hasSMILES ?smiles .
+  FILTER(?class IN (chem:PFASSulfonate, chem:PFASCarboxylate, chem:PFASEther))
+}
+ORDER BY ?compound

@@ -1,0 +1,20 @@
+{
+  "model_name": "ChemBERTa-OA-DeepFPLearn",
+  "architecture": [
+    "RDKit Morgan fingerprint input",
+    "DeepFPLearn-style fingerprint autoencoder",
+    "Latent fingerprint representation",
+    "ChemBERTa SMILES transformer embedding branch",
+    "Ontology embedding branch",
+    "Attention-based fusion",
+    "Binary PFAS toxicity prediction",
+    "Fusion attention explainability artifacts"
+  ],
+  "metrics": {
+    "test_accuracy": 0.7361963190184049,
+    "test_f1": 0.5949764521193093,
+    "test_precision": 0.6755793226381461,
+    "test_recall": 0.5315568022440392,
+    "test_roc_auc": 0.7553423999079276
+  }
+}

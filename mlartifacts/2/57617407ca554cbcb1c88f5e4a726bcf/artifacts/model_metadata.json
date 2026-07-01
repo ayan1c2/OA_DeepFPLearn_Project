@@ -1,0 +1,19 @@
+{
+  "model_name": "OA-DeepFPLearn-GNN",
+  "architecture": [
+    "RDKit Morgan fingerprint input",
+    "DeepFPLearn-style autoencoder latent fingerprint learning",
+    "Molecular graph neural network branch",
+    "Ontology embedding branch",
+    "Attention-based fusion",
+    "Binary toxicity prediction",
+    "Attention-weight explainability artifacts"
+  ],
+  "metrics": {
+    "test_accuracy": 0.7418200408997955,
+    "test_f1": 0.5672664952870609,
+    "test_precision": 0.7290748898678414,
+    "test_recall": 0.4642356241234222,
+    "test_roc_auc": 0.7654094344881124
+  }
+}

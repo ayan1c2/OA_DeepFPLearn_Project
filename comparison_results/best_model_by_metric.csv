@@ -1,0 +1,6 @@
+metric,best_model,best_score,run_id
+test_accuracy,Encoder-DeepFPLearn,0.7474437627811861,9af714984abf4abea4dc982a6818a412
+test_precision,GNN-DeepFPLearn,0.7290748898678414,57617407ca554cbcb1c88f5e4a726bcf
+test_recall,GAT-DeepFPLearn,0.6283309957924264,1434a96cf4fa40dda0985e1c12fb28e4
+test_f1,GAT-DeepFPLearn,0.6309859154929578,1434a96cf4fa40dda0985e1c12fb28e4
+test_roc_auc,Encoder-DeepFPLearn,0.7895665939640669,9af714984abf4abea4dc982a6818a412

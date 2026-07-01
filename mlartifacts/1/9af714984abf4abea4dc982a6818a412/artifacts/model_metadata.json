@@ -1,0 +1,18 @@
+{
+  "model_name": "OA-DeepFPLearn",
+  "architecture": [
+    "RDKit molecular fingerprint input",
+    "DeepFPLearn-style autoencoder latent fingerprint learning",
+    "Ontology embedding branch",
+    "Attention-based fusion layer",
+    "Binary toxicity prediction output",
+    "Attention-weight explainability artifacts"
+  ],
+  "metrics": {
+    "test_accuracy": 0.7474437627811861,
+    "test_f1": 0.5977198697068404,
+    "test_precision": 0.7126213592233009,
+    "test_recall": 0.514726507713885,
+    "test_roc_auc": 0.7895665939640669
+  }
+}

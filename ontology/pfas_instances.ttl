@@ -1,0 +1,46 @@
+@prefix pfas: <http://example.org/pfas#> .
+@prefix chem: <http://example.org/chemical#> .
+@prefix tox: <http://example.org/toxicity#> .
+@prefix reg: <http://example.org/regulation#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+chem:PFOS a chem:PFASSulfonate ;
+    pfas:hasSMILES "C(C(C(C(C(C(C(F)(F)S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F" ;
+    pfas:hasCAS "1763-23-1" ;
+    pfas:belongsToClass chem:PFASSulfonate ;
+    pfas:hasToxicityEndpoint tox:LiverToxicity ;
+    pfas:hasToxicityEndpoint tox:Bioaccumulation ;
+    pfas:hasToxicityEndpoint tox:Persistence ;
+    pfas:hasRiskCategory tox:HighRisk ;
+    pfas:hasRegulatoryStatus reg:Restricted ;
+    pfas:hasPredictionProbability "0.93"^^xsd:float .
+
+chem:PFOA a chem:PFASCarboxylate ;
+    pfas:hasSMILES "C(=O)(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)O" ;
+    pfas:hasCAS "335-67-1" ;
+    pfas:belongsToClass chem:PFASCarboxylate ;
+    pfas:hasToxicityEndpoint tox:DevelopmentalToxicity ;
+    pfas:hasToxicityEndpoint tox:Persistence ;
+    pfas:hasRiskCategory tox:HighRisk ;
+    pfas:hasRegulatoryStatus reg:Restricted ;
+    pfas:hasPredictionProbability "0.90"^^xsd:float .
+
+chem:GenX a chem:PFASEther ;
+    pfas:hasSMILES "C(C(F)(F)OC(C(F)(F)F)(F)F)(C(=O)O)(F)F" ;
+    pfas:belongsToClass chem:PFASEther ;
+    pfas:hasToxicityEndpoint tox:EndocrineDisruption ;
+    pfas:hasToxicityEndpoint tox:Persistence ;
+    pfas:hasRiskCategory tox:MediumRisk ;
+    pfas:hasRegulatoryStatus reg:UnderReview ;
+    pfas:hasPredictionProbability "0.74"^^xsd:float .
+
+chem:Ethanol a chem:NonPFAS ;
+    pfas:hasSMILES "CCO" ;
+    pfas:belongsToClass chem:NonPFAS ;
+    pfas:hasRiskCategory tox:LowRisk ;
+    pfas:hasRegulatoryStatus reg:NotRegulated ;
+    pfas:hasPredictionProbability "0.08"^^xsd:float .
+
+chem:PFOS pfas:similarTo chem:PFOA .
+chem:PFOA pfas:similarTo chem:PFOS .
+chem:GenX pfas:similarTo chem:PFOA .

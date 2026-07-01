@@ -1,0 +1,606 @@
+{
+  "nodes": [
+    {
+      "node": "Chemical",
+      "node_type": "root"
+    },
+    {
+      "node": "PFAS",
+      "node_type": "chemical_group"
+    },
+    {
+      "node": "Non_PFAS",
+      "node_type": "chemical_group"
+    },
+    {
+      "node": "PFAS_Sulfonate",
+      "node_type": "pfas_class"
+    },
+    {
+      "node": "PFAS_Carboxylate",
+      "node_type": "pfas_class"
+    },
+    {
+      "node": "PFAS_Ether",
+      "node_type": "pfas_class"
+    },
+    {
+      "node": "Fluorotelomer",
+      "node_type": "pfas_class"
+    },
+    {
+      "node": "Perfluoroalkyl_Acid",
+      "node_type": "pfas_class"
+    },
+    {
+      "node": "Polyfluoroalkyl_Substance",
+      "node_type": "pfas_class"
+    },
+    {
+      "node": "Precursor_PFAS",
+      "node_type": "pfas_class"
+    },
+    {
+      "node": "Short_Chain_PFAS",
+      "node_type": "pfas_class"
+    },
+    {
+      "node": "Long_Chain_PFAS",
+      "node_type": "pfas_class"
+    },
+    {
+      "node": "PFOS",
+      "node_type": "compound"
+    },
+    {
+      "node": "PFOA",
+      "node_type": "compound"
+    },
+    {
+      "node": "PFHxS",
+      "node_type": "compound"
+    },
+    {
+      "node": "PFHxA",
+      "node_type": "compound"
+    },
+    {
+      "node": "PFNA",
+      "node_type": "compound"
+    },
+    {
+      "node": "PFDA",
+      "node_type": "compound"
+    },
+    {
+      "node": "PFBS",
+      "node_type": "compound"
+    },
+    {
+      "node": "GenX",
+      "node_type": "compound"
+    },
+    {
+      "node": "ADONA",
+      "node_type": "compound"
+    },
+    {
+      "node": "FTOH_6_2",
+      "node_type": "compound"
+    },
+    {
+      "node": "FTOH_8_2",
+      "node_type": "compound"
+    },
+    {
+      "node": "Liver_Toxicity",
+      "node_type": "toxicity_endpoint"
+    },
+    {
+      "node": "Developmental_Toxicity",
+      "node_type": "toxicity_endpoint"
+    },
+    {
+      "node": "Endocrine_Disruption",
+      "node_type": "toxicity_endpoint"
+    },
+    {
+      "node": "Reproductive_Toxicity",
+      "node_type": "toxicity_endpoint"
+    },
+    {
+      "node": "Immunotoxicity",
+      "node_type": "toxicity_endpoint"
+    },
+    {
+      "node": "Neurotoxicity",
+      "node_type": "toxicity_endpoint"
+    },
+    {
+      "node": "Carcinogenicity",
+      "node_type": "toxicity_endpoint"
+    },
+    {
+      "node": "Bioaccumulation",
+      "node_type": "toxicity_endpoint"
+    },
+    {
+      "node": "Persistence",
+      "node_type": "toxicity_endpoint"
+    },
+    {
+      "node": "Water_Exposure",
+      "node_type": "exposure_route"
+    },
+    {
+      "node": "Food_Exposure",
+      "node_type": "exposure_route"
+    },
+    {
+      "node": "Dust_Exposure",
+      "node_type": "exposure_route"
+    },
+    {
+      "node": "Air_Exposure",
+      "node_type": "exposure_route"
+    },
+    {
+      "node": "Occupational_Exposure",
+      "node_type": "exposure_route"
+    },
+    {
+      "node": "Groundwater",
+      "node_type": "environmental_compartment"
+    },
+    {
+      "node": "Surface_Water",
+      "node_type": "environmental_compartment"
+    },
+    {
+      "node": "Soil",
+      "node_type": "environmental_compartment"
+    },
+    {
+      "node": "Sediment",
+      "node_type": "environmental_compartment"
+    },
+    {
+      "node": "Biota",
+      "node_type": "environmental_compartment"
+    },
+    {
+      "node": "Wastewater",
+      "node_type": "environmental_compartment"
+    },
+    {
+      "node": "High_Risk",
+      "node_type": "risk_level"
+    },
+    {
+      "node": "Medium_Risk",
+      "node_type": "risk_level"
+    },
+    {
+      "node": "Low_Risk",
+      "node_type": "risk_level"
+    },
+    {
+      "node": "Regulated",
+      "node_type": "regulatory_status"
+    },
+    {
+      "node": "Candidate_for_Regulation",
+      "node_type": "regulatory_status"
+    },
+    {
+      "node": "Emerging_Concern",
+      "node_type": "regulatory_status"
+    },
+    {
+      "node": "Restricted",
+      "node_type": "regulatory_status"
+    },
+    {
+      "node": "Monitoring_Required",
+      "node_type": "decision_action"
+    },
+    {
+      "node": "Further_Testing",
+      "node_type": "decision_action"
+    },
+    {
+      "node": "Regulatory_Review",
+      "node_type": "decision_action"
+    },
+    {
+      "node": "Priority_Screening",
+      "node_type": "decision_action"
+    },
+    {
+      "node": "Risk_Report",
+      "node_type": "decision_action"
+    }
+  ],
+  "edges": [
+    {
+      "source": "Chemical",
+      "target": "PFAS",
+      "relation": "is_a"
+    },
+    {
+      "source": "Chemical",
+      "target": "Non_PFAS",
+      "relation": "is_a"
+    },
+    {
+      "source": "PFAS",
+      "target": "PFAS_Sulfonate",
+      "relation": "has_class"
+    },
+    {
+      "source": "PFAS",
+      "target": "PFAS_Carboxylate",
+      "relation": "has_class"
+    },
+    {
+      "source": "PFAS",
+      "target": "PFAS_Ether",
+      "relation": "has_class"
+    },
+    {
+      "source": "PFAS",
+      "target": "Fluorotelomer",
+      "relation": "has_class"
+    },
+    {
+      "source": "PFAS",
+      "target": "Perfluoroalkyl_Acid",
+      "relation": "has_class"
+    },
+    {
+      "source": "PFAS",
+      "target": "Polyfluoroalkyl_Substance",
+      "relation": "has_class"
+    },
+    {
+      "source": "PFAS",
+      "target": "Precursor_PFAS",
+      "relation": "has_class"
+    },
+    {
+      "source": "PFAS",
+      "target": "Short_Chain_PFAS",
+      "relation": "has_chain_length"
+    },
+    {
+      "source": "PFAS",
+      "target": "Long_Chain_PFAS",
+      "relation": "has_chain_length"
+    },
+    {
+      "source": "PFAS",
+      "target": "Water_Exposure",
+      "relation": "has_exposure_route"
+    },
+    {
+      "source": "PFAS",
+      "target": "Food_Exposure",
+      "relation": "has_exposure_route"
+    },
+    {
+      "source": "PFAS",
+      "target": "Dust_Exposure",
+      "relation": "has_exposure_route"
+    },
+    {
+      "source": "PFAS",
+      "target": "Air_Exposure",
+      "relation": "has_exposure_route"
+    },
+    {
+      "source": "PFAS",
+      "target": "Occupational_Exposure",
+      "relation": "has_exposure_route"
+    },
+    {
+      "source": "PFAS",
+      "target": "Groundwater",
+      "relation": "found_in"
+    },
+    {
+      "source": "PFAS",
+      "target": "Surface_Water",
+      "relation": "found_in"
+    },
+    {
+      "source": "PFAS",
+      "target": "Soil",
+      "relation": "found_in"
+    },
+    {
+      "source": "PFAS",
+      "target": "Sediment",
+      "relation": "found_in"
+    },
+    {
+      "source": "PFAS",
+      "target": "Biota",
+      "relation": "found_in"
+    },
+    {
+      "source": "PFAS",
+      "target": "Wastewater",
+      "relation": "found_in"
+    },
+    {
+      "source": "PFAS_Sulfonate",
+      "target": "PFOS",
+      "relation": "belongs_to"
+    },
+    {
+      "source": "PFAS_Sulfonate",
+      "target": "PFHxS",
+      "relation": "belongs_to"
+    },
+    {
+      "source": "PFAS_Sulfonate",
+      "target": "PFBS",
+      "relation": "belongs_to"
+    },
+    {
+      "source": "PFAS_Sulfonate",
+      "target": "Liver_Toxicity",
+      "relation": "associated_with"
+    },
+    {
+      "source": "PFAS_Sulfonate",
+      "target": "Immunotoxicity",
+      "relation": "associated_with"
+    },
+    {
+      "source": "PFAS_Sulfonate",
+      "target": "Bioaccumulation",
+      "relation": "associated_with"
+    },
+    {
+      "source": "PFAS_Carboxylate",
+      "target": "PFOA",
+      "relation": "belongs_to"
+    },
+    {
+      "source": "PFAS_Carboxylate",
+      "target": "PFHxA",
+      "relation": "belongs_to"
+    },
+    {
+      "source": "PFAS_Carboxylate",
+      "target": "PFNA",
+      "relation": "belongs_to"
+    },
+    {
+      "source": "PFAS_Carboxylate",
+      "target": "PFDA",
+      "relation": "belongs_to"
+    },
+    {
+      "source": "PFAS_Carboxylate",
+      "target": "Developmental_Toxicity",
+      "relation": "associated_with"
+    },
+    {
+      "source": "PFAS_Carboxylate",
+      "target": "Reproductive_Toxicity",
+      "relation": "associated_with"
+    },
+    {
+      "source": "PFAS_Carboxylate",
+      "target": "Liver_Toxicity",
+      "relation": "associated_with"
+    },
+    {
+      "source": "PFAS_Ether",
+      "target": "GenX",
+      "relation": "belongs_to"
+    },
+    {
+      "source": "PFAS_Ether",
+      "target": "ADONA",
+      "relation": "belongs_to"
+    },
+    {
+      "source": "PFAS_Ether",
+      "target": "Endocrine_Disruption",
+      "relation": "associated_with"
+    },
+    {
+      "source": "PFAS_Ether",
+      "target": "Liver_Toxicity",
+      "relation": "associated_with"
+    },
+    {
+      "source": "Fluorotelomer",
+      "target": "FTOH_6_2",
+      "relation": "belongs_to"
+    },
+    {
+      "source": "Fluorotelomer",
+      "target": "FTOH_8_2",
+      "relation": "belongs_to"
+    },
+    {
+      "source": "Short_Chain_PFAS",
+      "target": "PFBS",
+      "relation": "has_chain_length"
+    },
+    {
+      "source": "Short_Chain_PFAS",
+      "target": "PFHxA",
+      "relation": "has_chain_length"
+    },
+    {
+      "source": "Short_Chain_PFAS",
+      "target": "GenX",
+      "relation": "has_chain_length"
+    },
+    {
+      "source": "Short_Chain_PFAS",
+      "target": "ADONA",
+      "relation": "has_chain_length"
+    },
+    {
+      "source": "Short_Chain_PFAS",
+      "target": "Persistence",
+      "relation": "associated_with"
+    },
+    {
+      "source": "Long_Chain_PFAS",
+      "target": "PFOS",
+      "relation": "has_chain_length"
+    },
+    {
+      "source": "Long_Chain_PFAS",
+      "target": "PFOA",
+      "relation": "has_chain_length"
+    },
+    {
+      "source": "Long_Chain_PFAS",
+      "target": "PFHxS",
+      "relation": "has_chain_length"
+    },
+    {
+      "source": "Long_Chain_PFAS",
+      "target": "PFNA",
+      "relation": "has_chain_length"
+    },
+    {
+      "source": "Long_Chain_PFAS",
+      "target": "PFDA",
+      "relation": "has_chain_length"
+    },
+    {
+      "source": "Long_Chain_PFAS",
+      "target": "Bioaccumulation",
+      "relation": "associated_with"
+    },
+    {
+      "source": "Long_Chain_PFAS",
+      "target": "Persistence",
+      "relation": "associated_with"
+    },
+    {
+      "source": "PFOS",
+      "target": "Regulated",
+      "relation": "has_status"
+    },
+    {
+      "source": "PFOA",
+      "target": "Regulated",
+      "relation": "has_status"
+    },
+    {
+      "source": "PFHxS",
+      "target": "Restricted",
+      "relation": "has_status"
+    },
+    {
+      "source": "PFNA",
+      "target": "Candidate_for_Regulation",
+      "relation": "has_status"
+    },
+    {
+      "source": "GenX",
+      "target": "Emerging_Concern",
+      "relation": "has_status"
+    },
+    {
+      "source": "ADONA",
+      "target": "Emerging_Concern",
+      "relation": "has_status"
+    },
+    {
+      "source": "Liver_Toxicity",
+      "target": "High_Risk",
+      "relation": "implies"
+    },
+    {
+      "source": "Developmental_Toxicity",
+      "target": "High_Risk",
+      "relation": "implies"
+    },
+    {
+      "source": "Endocrine_Disruption",
+      "target": "Medium_Risk",
+      "relation": "implies"
+    },
+    {
+      "source": "Reproductive_Toxicity",
+      "target": "High_Risk",
+      "relation": "implies"
+    },
+    {
+      "source": "Immunotoxicity",
+      "target": "Medium_Risk",
+      "relation": "implies"
+    },
+    {
+      "source": "Neurotoxicity",
+      "target": "Medium_Risk",
+      "relation": "implies"
+    },
+    {
+      "source": "Carcinogenicity",
+      "target": "High_Risk",
+      "relation": "implies"
+    },
+    {
+      "source": "Bioaccumulation",
+      "target": "High_Risk",
+      "relation": "implies"
+    },
+    {
+      "source": "Persistence",
+      "target": "Medium_Risk",
+      "relation": "implies"
+    },
+    {
+      "source": "High_Risk",
+      "target": "Monitoring_Required",
+      "relation": "triggers"
+    },
+    {
+      "source": "High_Risk",
+      "target": "Regulatory_Review",
+      "relation": "triggers"
+    },
+    {
+      "source": "High_Risk",
+      "target": "Risk_Report",
+      "relation": "triggers"
+    },
+    {
+      "source": "Medium_Risk",
+      "target": "Further_Testing",
+      "relation": "triggers"
+    },
+    {
+      "source": "Medium_Risk",
+      "target": "Priority_Screening",
+      "relation": "triggers"
+    },
+    {
+      "source": "Regulated",
+      "target": "Risk_Report",
+      "relation": "triggers"
+    },
+    {
+      "source": "Emerging_Concern",
+      "target": "Priority_Screening",
+      "relation": "triggers"
+    },
+    {
+      "source": "Restricted",
+      "target": "Regulatory_Review",
+      "relation": "triggers"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+dataset,model,evaluation_mode,accuracy,precision,recall,f1,mcc,roc_auc,selection_score
+MoleculeNet_Tox21,StackingEnsemble,holdout,0.7673824130879345,0.7345454545454545,0.5666199158485273,0.6397466349960411,0.48084984285565896,0.807486299151828,0.807486299151828

@@ -1,0 +1,10 @@
+PREFIX pfas: <http://example.org/pfas#>
+PREFIX reg: <http://example.org/regulation#>
+
+SELECT ?compound ?status ?cas
+WHERE {
+  ?compound pfas:hasRegulatoryStatus ?status .
+  OPTIONAL { ?compound pfas:hasCAS ?cas . }
+  FILTER(?status IN (reg:Restricted, reg:UnderReview))
+}
+ORDER BY ?status ?compound

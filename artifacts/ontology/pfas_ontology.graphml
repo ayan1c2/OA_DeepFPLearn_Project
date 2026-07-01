@@ -1,0 +1,397 @@
+<?xml version='1.0' encoding='utf-8'?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd"><key id="d1" for="edge" attr.name="relation" attr.type="string"/>
+<key id="d0" for="node" attr.name="node_type" attr.type="string"/>
+<graph edgedefault="undirected"><node id="Chemical">
+  <data key="d0">root</data>
+</node>
+<node id="PFAS">
+  <data key="d0">chemical_group</data>
+</node>
+<node id="Non_PFAS">
+  <data key="d0">chemical_group</data>
+</node>
+<node id="PFAS_Sulfonate">
+  <data key="d0">pfas_class</data>
+</node>
+<node id="PFAS_Carboxylate">
+  <data key="d0">pfas_class</data>
+</node>
+<node id="PFAS_Ether">
+  <data key="d0">pfas_class</data>
+</node>
+<node id="Fluorotelomer">
+  <data key="d0">pfas_class</data>
+</node>
+<node id="Perfluoroalkyl_Acid">
+  <data key="d0">pfas_class</data>
+</node>
+<node id="Polyfluoroalkyl_Substance">
+  <data key="d0">pfas_class</data>
+</node>
+<node id="Precursor_PFAS">
+  <data key="d0">pfas_class</data>
+</node>
+<node id="Short_Chain_PFAS">
+  <data key="d0">pfas_class</data>
+</node>
+<node id="Long_Chain_PFAS">
+  <data key="d0">pfas_class</data>
+</node>
+<node id="PFOS">
+  <data key="d0">compound</data>
+</node>
+<node id="PFOA">
+  <data key="d0">compound</data>
+</node>
+<node id="PFHxS">
+  <data key="d0">compound</data>
+</node>
+<node id="PFHxA">
+  <data key="d0">compound</data>
+</node>
+<node id="PFNA">
+  <data key="d0">compound</data>
+</node>
+<node id="PFDA">
+  <data key="d0">compound</data>
+</node>
+<node id="PFBS">
+  <data key="d0">compound</data>
+</node>
+<node id="GenX">
+  <data key="d0">compound</data>
+</node>
+<node id="ADONA">
+  <data key="d0">compound</data>
+</node>
+<node id="FTOH_6_2">
+  <data key="d0">compound</data>
+</node>
+<node id="FTOH_8_2">
+  <data key="d0">compound</data>
+</node>
+<node id="Liver_Toxicity">
+  <data key="d0">toxicity_endpoint</data>
+</node>
+<node id="Developmental_Toxicity">
+  <data key="d0">toxicity_endpoint</data>
+</node>
+<node id="Endocrine_Disruption">
+  <data key="d0">toxicity_endpoint</data>
+</node>
+<node id="Reproductive_Toxicity">
+  <data key="d0">toxicity_endpoint</data>
+</node>
+<node id="Immunotoxicity">
+  <data key="d0">toxicity_endpoint</data>
+</node>
+<node id="Neurotoxicity">
+  <data key="d0">toxicity_endpoint</data>
+</node>
+<node id="Carcinogenicity">
+  <data key="d0">toxicity_endpoint</data>
+</node>
+<node id="Bioaccumulation">
+  <data key="d0">toxicity_endpoint</data>
+</node>
+<node id="Persistence">
+  <data key="d0">toxicity_endpoint</data>
+</node>
+<node id="Water_Exposure">
+  <data key="d0">exposure_route</data>
+</node>
+<node id="Food_Exposure">
+  <data key="d0">exposure_route</data>
+</node>
+<node id="Dust_Exposure">
+  <data key="d0">exposure_route</data>
+</node>
+<node id="Air_Exposure">
+  <data key="d0">exposure_route</data>
+</node>
+<node id="Occupational_Exposure">
+  <data key="d0">exposure_route</data>
+</node>
+<node id="Groundwater">
+  <data key="d0">environmental_compartment</data>
+</node>
+<node id="Surface_Water">
+  <data key="d0">environmental_compartment</data>
+</node>
+<node id="Soil">
+  <data key="d0">environmental_compartment</data>
+</node>
+<node id="Sediment">
+  <data key="d0">environmental_compartment</data>
+</node>
+<node id="Biota">
+  <data key="d0">environmental_compartment</data>
+</node>
+<node id="Wastewater">
+  <data key="d0">environmental_compartment</data>
+</node>
+<node id="High_Risk">
+  <data key="d0">risk_level</data>
+</node>
+<node id="Medium_Risk">
+  <data key="d0">risk_level</data>
+</node>
+<node id="Low_Risk">
+  <data key="d0">risk_level</data>
+</node>
+<node id="Regulated">
+  <data key="d0">regulatory_status</data>
+</node>
+<node id="Candidate_for_Regulation">
+  <data key="d0">regulatory_status</data>
+</node>
+<node id="Emerging_Concern">
+  <data key="d0">regulatory_status</data>
+</node>
+<node id="Restricted">
+  <data key="d0">regulatory_status</data>
+</node>
+<node id="Monitoring_Required">
+  <data key="d0">decision_action</data>
+</node>
+<node id="Further_Testing">
+  <data key="d0">decision_action</data>
+</node>
+<node id="Regulatory_Review">
+  <data key="d0">decision_action</data>
+</node>
+<node id="Priority_Screening">
+  <data key="d0">decision_action</data>
+</node>
+<node id="Risk_Report">
+  <data key="d0">decision_action</data>
+</node>
+<edge source="Chemical" target="PFAS">
+  <data key="d1">is_a</data>
+</edge>
+<edge source="Chemical" target="Non_PFAS">
+  <data key="d1">is_a</data>
+</edge>
+<edge source="PFAS" target="PFAS_Sulfonate">
+  <data key="d1">has_class</data>
+</edge>
+<edge source="PFAS" target="PFAS_Carboxylate">
+  <data key="d1">has_class</data>
+</edge>
+<edge source="PFAS" target="PFAS_Ether">
+  <data key="d1">has_class</data>
+</edge>
+<edge source="PFAS" target="Fluorotelomer">
+  <data key="d1">has_class</data>
+</edge>
+<edge source="PFAS" target="Perfluoroalkyl_Acid">
+  <data key="d1">has_class</data>
+</edge>
+<edge source="PFAS" target="Polyfluoroalkyl_Substance">
+  <data key="d1">has_class</data>
+</edge>
+<edge source="PFAS" target="Precursor_PFAS">
+  <data key="d1">has_class</data>
+</edge>
+<edge source="PFAS" target="Short_Chain_PFAS">
+  <data key="d1">has_chain_length</data>
+</edge>
+<edge source="PFAS" target="Long_Chain_PFAS">
+  <data key="d1">has_chain_length</data>
+</edge>
+<edge source="PFAS" target="Water_Exposure">
+  <data key="d1">has_exposure_route</data>
+</edge>
+<edge source="PFAS" target="Food_Exposure">
+  <data key="d1">has_exposure_route</data>
+</edge>
+<edge source="PFAS" target="Dust_Exposure">
+  <data key="d1">has_exposure_route</data>
+</edge>
+<edge source="PFAS" target="Air_Exposure">
+  <data key="d1">has_exposure_route</data>
+</edge>
+<edge source="PFAS" target="Occupational_Exposure">
+  <data key="d1">has_exposure_route</data>
+</edge>
+<edge source="PFAS" target="Groundwater">
+  <data key="d1">found_in</data>
+</edge>
+<edge source="PFAS" target="Surface_Water">
+  <data key="d1">found_in</data>
+</edge>
+<edge source="PFAS" target="Soil">
+  <data key="d1">found_in</data>
+</edge>
+<edge source="PFAS" target="Sediment">
+  <data key="d1">found_in</data>
+</edge>
+<edge source="PFAS" target="Biota">
+  <data key="d1">found_in</data>
+</edge>
+<edge source="PFAS" target="Wastewater">
+  <data key="d1">found_in</data>
+</edge>
+<edge source="PFAS_Sulfonate" target="PFOS">
+  <data key="d1">belongs_to</data>
+</edge>
+<edge source="PFAS_Sulfonate" target="PFHxS">
+  <data key="d1">belongs_to</data>
+</edge>
+<edge source="PFAS_Sulfonate" target="PFBS">
+  <data key="d1">belongs_to</data>
+</edge>
+<edge source="PFAS_Sulfonate" target="Liver_Toxicity">
+  <data key="d1">associated_with</data>
+</edge>
+<edge source="PFAS_Sulfonate" target="Immunotoxicity">
+  <data key="d1">associated_with</data>
+</edge>
+<edge source="PFAS_Sulfonate" target="Bioaccumulation">
+  <data key="d1">associated_with</data>
+</edge>
+<edge source="PFAS_Carboxylate" target="PFOA">
+  <data key="d1">belongs_to</data>
+</edge>
+<edge source="PFAS_Carboxylate" target="PFHxA">
+  <data key="d1">belongs_to</data>
+</edge>
+<edge source="PFAS_Carboxylate" target="PFNA">
+  <data key="d1">belongs_to</data>
+</edge>
+<edge source="PFAS_Carboxylate" target="PFDA">
+  <data key="d1">belongs_to</data>
+</edge>
+<edge source="PFAS_Carboxylate" target="Developmental_Toxicity">
+  <data key="d1">associated_with</data>
+</edge>
+<edge source="PFAS_Carboxylate" target="Reproductive_Toxicity">
+  <data key="d1">associated_with</data>
+</edge>
+<edge source="PFAS_Carboxylate" target="Liver_Toxicity">
+  <data key="d1">associated_with</data>
+</edge>
+<edge source="PFAS_Ether" target="GenX">
+  <data key="d1">belongs_to</data>
+</edge>
+<edge source="PFAS_Ether" target="ADONA">
+  <data key="d1">belongs_to</data>
+</edge>
+<edge source="PFAS_Ether" target="Endocrine_Disruption">
+  <data key="d1">associated_with</data>
+</edge>
+<edge source="PFAS_Ether" target="Liver_Toxicity">
+  <data key="d1">associated_with</data>
+</edge>
+<edge source="Fluorotelomer" target="FTOH_6_2">
+  <data key="d1">belongs_to</data>
+</edge>
+<edge source="Fluorotelomer" target="FTOH_8_2">
+  <data key="d1">belongs_to</data>
+</edge>
+<edge source="Short_Chain_PFAS" target="PFBS">
+  <data key="d1">has_chain_length</data>
+</edge>
+<edge source="Short_Chain_PFAS" target="PFHxA">
+  <data key="d1">has_chain_length</data>
+</edge>
+<edge source="Short_Chain_PFAS" target="GenX">
+  <data key="d1">has_chain_length</data>
+</edge>
+<edge source="Short_Chain_PFAS" target="ADONA">
+  <data key="d1">has_chain_length</data>
+</edge>
+<edge source="Short_Chain_PFAS" target="Persistence">
+  <data key="d1">associated_with</data>
+</edge>
+<edge source="Long_Chain_PFAS" target="PFOS">
+  <data key="d1">has_chain_length</data>
+</edge>
+<edge source="Long_Chain_PFAS" target="PFOA">
+  <data key="d1">has_chain_length</data>
+</edge>
+<edge source="Long_Chain_PFAS" target="PFHxS">
+  <data key="d1">has_chain_length</data>
+</edge>
+<edge source="Long_Chain_PFAS" target="PFNA">
+  <data key="d1">has_chain_length</data>
+</edge>
+<edge source="Long_Chain_PFAS" target="PFDA">
+  <data key="d1">has_chain_length</data>
+</edge>
+<edge source="Long_Chain_PFAS" target="Bioaccumulation">
+  <data key="d1">associated_with</data>
+</edge>
+<edge source="Long_Chain_PFAS" target="Persistence">
+  <data key="d1">associated_with</data>
+</edge>
+<edge source="PFOS" target="Regulated">
+  <data key="d1">has_status</data>
+</edge>
+<edge source="PFOA" target="Regulated">
+  <data key="d1">has_status</data>
+</edge>
+<edge source="PFHxS" target="Restricted">
+  <data key="d1">has_status</data>
+</edge>
+<edge source="PFNA" target="Candidate_for_Regulation">
+  <data key="d1">has_status</data>
+</edge>
+<edge source="GenX" target="Emerging_Concern">
+  <data key="d1">has_status</data>
+</edge>
+<edge source="ADONA" target="Emerging_Concern">
+  <data key="d1">has_status</data>
+</edge>
+<edge source="Liver_Toxicity" target="High_Risk">
+  <data key="d1">implies</data>
+</edge>
+<edge source="Developmental_Toxicity" target="High_Risk">
+  <data key="d1">implies</data>
+</edge>
+<edge source="Endocrine_Disruption" target="Medium_Risk">
+  <data key="d1">implies</data>
+</edge>
+<edge source="Reproductive_Toxicity" target="High_Risk">
+  <data key="d1">implies</data>
+</edge>
+<edge source="Immunotoxicity" target="Medium_Risk">
+  <data key="d1">implies</data>
+</edge>
+<edge source="Neurotoxicity" target="Medium_Risk">
+  <data key="d1">implies</data>
+</edge>
+<edge source="Carcinogenicity" target="High_Risk">
+  <data key="d1">implies</data>
+</edge>
+<edge source="Bioaccumulation" target="High_Risk">
+  <data key="d1">implies</data>
+</edge>
+<edge source="Persistence" target="Medium_Risk">
+  <data key="d1">implies</data>
+</edge>
+<edge source="High_Risk" target="Monitoring_Required">
+  <data key="d1">triggers</data>
+</edge>
+<edge source="High_Risk" target="Regulatory_Review">
+  <data key="d1">triggers</data>
+</edge>
+<edge source="High_Risk" target="Risk_Report">
+  <data key="d1">triggers</data>
+</edge>
+<edge source="Medium_Risk" target="Further_Testing">
+  <data key="d1">triggers</data>
+</edge>
+<edge source="Medium_Risk" target="Priority_Screening">
+  <data key="d1">triggers</data>
+</edge>
+<edge source="Regulated" target="Risk_Report">
+  <data key="d1">triggers</data>
+</edge>
+<edge source="Emerging_Concern" target="Priority_Screening">
+  <data key="d1">triggers</data>
+</edge>
+<edge source="Restricted" target="Regulatory_Review">
+  <data key="d1">triggers</data>
+</edge>
+</graph></graphml>

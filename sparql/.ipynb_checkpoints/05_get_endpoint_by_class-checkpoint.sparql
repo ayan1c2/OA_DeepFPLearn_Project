@@ -1,0 +1,10 @@
+PREFIX chem: <http://example.org/chemical#>
+PREFIX pfas: <http://example.org/pfas#>
+
+SELECT ?class ?endpoint (COUNT(?compound) AS ?compoundCount)
+WHERE {
+  ?compound pfas:belongsToClass ?class ;
+            pfas:hasToxicityEndpoint ?endpoint .
+}
+GROUP BY ?class ?endpoint
+ORDER BY ?class DESC(?compoundCount)

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>OA-DeepFPLearn Platform Overview</title>
+<style>
+body{font-family:Arial,sans-serif;margin:0;background:#f5f7fb;color:#1f2937}
+.hero{background:linear-gradient(135deg,#0f766e,#2563eb);color:white;padding:60px 30px;text-align:center}
+.container{max-width:1200px;margin:auto;padding:25px}
+.card{background:white;padding:24px;margin:18px 0;border-radius:14px;box-shadow:0 4px 12px rgba(0,0,0,.08)}
+h1,h2{margin-top:0}
+.flow{font-size:18px;text-align:center;font-weight:bold;line-height:2}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+</style>
+</head>
+<body>
+<div class="hero">
+<h1>Ontology-Aware DeepFPLearn Platform</h1>
+<p>Automatic and Explainable PFAS Toxicity Prediction and Environmental Decision Support</p>
+</div>
+
+<div class="container">
+
+<div class="card">
+<h2>Platform Purpose</h2>
+<p>
+The OA-DeepFPLearn Platform combines molecular fingerprints, ontology-based knowledge engineering,
+Node2Vec embeddings, and explainable artificial intelligence to automatically predict PFAS toxicity,
+generate risk assessments, provide ontology reasoning paths, and support environmental decision making.
+</p>
+</div>
+
+<div class="card">
+<h2>System Workflow</h2>
+<div class="flow">
+SMILES → RDKit → Compound Identification → PFAS Classification → Ontology Graph Lookup → Node2Vec Embedding → OA‑DeepFPLearn → Explainability Engine → Risk Assessment → Regulatory Recommendation
+</div>
+</div>
+
+<div class="grid">
+<div class="card">
+<h2>Compound Identification</h2>
+<p>Automatically identifies PFAS-like compounds from SMILES structures and determines likely chemical classes.</p>
+</div>
+
+<div class="card">
+<h2>Ontology Intelligence</h2>
+<p>Uses a PFAS knowledge graph containing chemical classes, toxicity endpoints, environmental pathways, risk levels, and regulatory concepts.</p>
+</div>
+
+<div class="card">
+<h2>Prediction Engine</h2>
+<p>Combines molecular fingerprints and ontology embeddings to estimate toxicity probability and risk category.</p>
+</div>
+
+<div class="card">
+<h2>Explainability</h2>
+<p>Provides ontology reasoning paths, semantic explanations, attention-based interpretation, and recommended actions.</p>
+</div>
+</div>
+
+<div class="card">
+<h2>Outputs</h2>
+<ul>
+<li>Toxicity Probability</li>
+<li>Predicted Toxic / Non‑Toxic Status</li>
+<li>Risk Category</li>
+<li>Compound Information</li>
+<li>Ontology Reasoning Path</li>
+<li>Regulatory Status</li>
+<li>Recommended Actions</li>
+</ul>
+</div>
+
+<div class="card">
+<h2>Supported Models</h2>
+<p>
+Encoder‑DeepFPLearn, GNN‑DeepFPLearn, GAT‑DeepFPLearn, GraphSAGE‑DeepFPLearn,
+GraphSAGE++‑DeepFPLearn, and ChemBERTa‑DeepFPLearn.
+</p>
+</div>
+
+</div>
+</body>
+</html>

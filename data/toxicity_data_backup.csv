@@ -1,0 +1,15 @@
+dataset,compound_id,smiles,pfas_class,toxicity
+PFAS_Demo,PFOS,C(C(C(C(C(C(C(F)(F)S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F,PFAS_Sulfonate,1
+PFAS_Demo,PFOA,C(=O)(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)O,PFAS_Carboxylate,1
+PFAS_Demo,GenX,C(C(F)(F)OC(C(F)(F)F)(F)F)(C(=O)O)(F)F,PFAS_Ether,1
+PFAS_Demo,Ethanol,CCO,Non_PFAS,0
+PFAS_Demo,Acetone,CC(=O)C,Non_PFAS,0
+PFAS_Demo,Benzene,c1ccccc1,Non_PFAS,0
+PFAS_Demo,Toluene,Cc1ccccc1,Non_PFAS,0
+PFAS_Demo,Phenol,c1ccc(cc1)O,Non_PFAS,0
+Tox21_Demo,PFOS,C(C(C(C(C(C(C(F)(F)S(=O)(=O)O)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F,PFAS_Sulfonate,1
+Tox21_Demo,PFOA,C(=O)(C(C(C(C(C(C(F)(F)F)(F)F)(F)F)(F)F)(F)F)(F)F)O,PFAS_Carboxylate,1
+Tox21_Demo,Water,O,Non_PFAS,0
+Tox21_Demo,Methane,C,Non_PFAS,0
+Tox21_Demo,Chloroform,ClC(Cl)Cl,Non_PFAS,1
+Tox21_Demo,Ethane,CC,Non_PFAS,0

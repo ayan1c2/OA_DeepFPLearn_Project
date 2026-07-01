@@ -1,0 +1,23 @@
+{
+  "model_name": "OA-DeepFPLearn-GraphSAGE++",
+  "metrics": {
+    "test_accuracy": 0.7234151329243353,
+    "test_f1": 0.5576451349141456,
+    "test_precision": 0.6686274509803921,
+    "test_recall": 0.4782608695652174,
+    "test_roc_auc": 0.7467737986299716
+  },
+  "params": {
+    "model_type": "OA-DeepFPLearn-GraphSAGE++",
+    "fingerprint_dim": 2048,
+    "ontology_dim": 32,
+    "max_atoms": 80,
+    "atom_feature_dim": 14,
+    "latent_fingerprint_dim": 128,
+    "batch_size": 16,
+    "epochs": 120,
+    "learning_rate": 0.0003,
+    "dropout_rate": 0.3,
+    "l2_reg": 1e-05
+  }
+}

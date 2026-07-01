@@ -1,0 +1,10 @@
+PREFIX pfas: <http://example.org/pfas#>
+PREFIX tox: <http://example.org/toxicity#>
+
+SELECT ?compound ?endpoint ?probability
+WHERE {
+  ?compound pfas:hasRiskCategory tox:HighRisk ;
+            pfas:hasToxicityEndpoint ?endpoint ;
+            pfas:hasPredictionProbability ?probability .
+}
+ORDER BY DESC(?probability)

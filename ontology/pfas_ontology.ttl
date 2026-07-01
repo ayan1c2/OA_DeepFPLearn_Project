@@ -1,0 +1,84 @@
+@prefix pfas: <http://example.org/pfas#> .
+@prefix chem: <http://example.org/chemical#> .
+@prefix tox: <http://example.org/toxicity#> .
+@prefix reg: <http://example.org/regulation#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+pfas:PFASOntology a owl:Ontology ;
+    rdfs:label "PFAS Toxicity and Risk Ontology" .
+
+chem:Chemical a owl:Class .
+chem:PFAS a owl:Class ;
+    rdfs:subClassOf chem:Chemical .
+chem:NonPFAS a owl:Class ;
+    rdfs:subClassOf chem:Chemical .
+
+chem:PFASSulfonate a owl:Class ;
+    rdfs:subClassOf chem:PFAS .
+chem:PFASCarboxylate a owl:Class ;
+    rdfs:subClassOf chem:PFAS .
+chem:PFASEther a owl:Class ;
+    rdfs:subClassOf chem:PFAS .
+
+tox:ToxicityEndpoint a owl:Class .
+tox:LiverToxicity a owl:Class ;
+    rdfs:subClassOf tox:ToxicityEndpoint .
+tox:DevelopmentalToxicity a owl:Class ;
+    rdfs:subClassOf tox:ToxicityEndpoint .
+tox:EndocrineDisruption a owl:Class ;
+    rdfs:subClassOf tox:ToxicityEndpoint .
+tox:Bioaccumulation a owl:Class ;
+    rdfs:subClassOf tox:ToxicityEndpoint .
+tox:Persistence a owl:Class ;
+    rdfs:subClassOf tox:ToxicityEndpoint .
+
+tox:RiskCategory a owl:Class .
+tox:HighRisk a owl:Class ;
+    rdfs:subClassOf tox:RiskCategory .
+tox:MediumRisk a owl:Class ;
+    rdfs:subClassOf tox:RiskCategory .
+tox:LowRisk a owl:Class ;
+    rdfs:subClassOf tox:RiskCategory .
+
+reg:RegulatoryStatus a owl:Class .
+reg:Restricted a owl:Class ;
+    rdfs:subClassOf reg:RegulatoryStatus .
+reg:UnderReview a owl:Class ;
+    rdfs:subClassOf reg:RegulatoryStatus .
+reg:NotRegulated a owl:Class ;
+    rdfs:subClassOf reg:RegulatoryStatus .
+
+pfas:hasSMILES a owl:DatatypeProperty ;
+    rdfs:domain chem:Chemical ;
+    rdfs:range xsd:string .
+
+pfas:hasCAS a owl:DatatypeProperty ;
+    rdfs:domain chem:Chemical ;
+    rdfs:range xsd:string .
+
+pfas:belongsToClass a owl:ObjectProperty ;
+    rdfs:domain chem:Chemical ;
+    rdfs:range chem:Chemical .
+
+pfas:hasToxicityEndpoint a owl:ObjectProperty ;
+    rdfs:domain chem:Chemical ;
+    rdfs:range tox:ToxicityEndpoint .
+
+pfas:hasRiskCategory a owl:ObjectProperty ;
+    rdfs:domain chem:Chemical ;
+    rdfs:range tox:RiskCategory .
+
+pfas:hasRegulatoryStatus a owl:ObjectProperty ;
+    rdfs:domain chem:Chemical ;
+    rdfs:range reg:RegulatoryStatus .
+
+pfas:similarTo a owl:ObjectProperty ;
+    rdfs:domain chem:Chemical ;
+    rdfs:range chem:Chemical .
+
+pfas:hasPredictionProbability a owl:DatatypeProperty ;
+    rdfs:domain chem:Chemical ;
+    rdfs:range xsd:float .

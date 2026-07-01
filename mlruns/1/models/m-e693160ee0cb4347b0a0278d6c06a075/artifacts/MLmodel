@@ -1,0 +1,22 @@
+artifact_path: file:C:/Users/ayan/OneDrive - NILU/Desktop/debug/personal/OA_DeepFPLearn_Project_Full/OA_DeepFPLearn_Project_Full/mlruns/1/models/m-e693160ee0cb4347b0a0278d6c06a075/artifacts
+flavors:
+  python_function:
+    data: data
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.tensorflow
+    python_version: 3.12.9
+  tensorflow:
+    code: null
+    data: data
+    keras_version: 2.21.0
+    model_type: keras
+    save_format: tf
+mlflow_version: 3.13.0
+model_id: m-e693160ee0cb4347b0a0278d6c06a075
+model_size_bytes: 15775614
+model_uuid: m-e693160ee0cb4347b0a0278d6c06a075
+prompts: null
+run_id: e20541aa6a4e496daa8a29a9e2acd1b3
+utc_time_created: '2026-06-03 21:47:50.490790'

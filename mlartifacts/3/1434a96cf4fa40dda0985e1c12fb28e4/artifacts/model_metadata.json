@@ -1,0 +1,19 @@
+{
+  "model_name": "OA-DeepFPLearn-GAT",
+  "architecture": [
+    "RDKit Morgan fingerprint input",
+    "DeepFPLearn-style autoencoder latent fingerprint learning",
+    "Molecular Graph Attention Network branch",
+    "Ontology embedding branch",
+    "Fusion-level attention mechanism",
+    "Binary toxicity prediction",
+    "Attention-weight explainability artifacts"
+  ],
+  "metrics": {
+    "test_accuracy": 0.7321063394683026,
+    "test_f1": 0.6309859154929578,
+    "test_precision": 0.6336633663366337,
+    "test_recall": 0.6283309957924264,
+    "test_roc_auc": 0.765594481974231
+  }
+}
